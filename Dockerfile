@@ -14,7 +14,9 @@ RUN rm -rf /root/.cache /root/.local \
     /usr/lib/python*/site-packages/*.dist-info \
     /usr/lib/python*/site-packages/*.egg-info \
     /usr/lib/python*/turtledemo  \
-    /usr/lib/python*/turtle.py /usr/lib/python*/__pycache__/turtle.*
+    /usr/lib/python*/turtle.py /usr/lib/python*/__pycache__/turtle.* \
+    /var/cache/apk \
+    /var/lib/apk
 
 RUN find /usr/lib/python*/* | grep -E "(__pycache__|\.pyc|\.pyo$)" | xargs rm -rf
 
