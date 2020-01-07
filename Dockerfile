@@ -10,7 +10,7 @@ RUN rm -rf /root/.cache /root/.local \
     /media /usr/lib/terminfo /usr/share/terminfo \
     /usr/lib/python*/ensurepip \
     /usr/lib/python*/lib2to3 \
-    /usr/vin/2to3* \
+    /usr/bin/2to3* \
     /usr/lib/python*/site-packages/*.dist-info \
     /usr/lib/python*/site-packages/*.egg-info \
     /usr/lib/python*/turtledemo  \
