@@ -1,0 +1,17 @@
+version: "3.4"
+
+services:
+  clear:
+    build:
+      context: .
+    restart: on-failure
+    command: ["python3"]
+    networks:
+      private_network:
+
+networks:
+  private_network:
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.29.0.0/16
